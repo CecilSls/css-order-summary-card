@@ -15,5 +15,5 @@ __En todo caso, se aceptan sugerencias para mejorar el resultado.__
 * CSS
 * HTML
 
-## 👀 Preview:
+## 👀 Como deberia quedar:
 ![Design preview for the Order summary card coding challenge](./images/desktop-preview.jpg)
