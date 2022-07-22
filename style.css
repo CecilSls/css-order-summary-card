@@ -1,0 +1,117 @@
+@import url(https://fonts.googleapis.com/css?family=Red+Hat+Display:300,regular,500,700,900,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+:root{
+    --color-primary-pale-blue: hsl(225, 100%, 94%);
+    --color-primary-bright-blue: hsl(245, 75%, 52%);
+    --color-neutral-pale-blue: hsl(225, 100%, 98%);
+    --color-neutral-desaturated-blue: hsl(224, 23%, 55%);
+    --color-neutral-dark-blue: hsl(223, 47%, 23%);
+    --font-body-size: 16px;
+    --font-family-body: 'Red Hat Display', sans-serif;
+}
+
+body{
+    background-color: var(--color-primary-pale-blue);
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    font-family: 'Red Hat Display', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+.container__box{    
+    background-color: var(--color-neutral-pale-blue);
+    border-radius: 1rem 1rem;
+    max-width: 1400px;
+    height: auto;
+}
+
+.container__info{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 5rem;
+}
+
+.container__box img{
+    border-radius: 1rem 1rem 0 0;
+    width: 100%;
+}
+
+.container__price{
+    align-items: center;
+    background-color: #ecf1ff;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.container__price img{
+    width: 20%;
+}
+
+.container__price span{
+    font-size: 13px;
+    color: #757f97;
+}
+
+.container__price b{
+    color: #2f3d4d;
+}
+
+.container__price a{
+    font-size: 13px;
+    color: #463fb2;
+    text-decoration: underline;
+    margin: 15px 0;
+}
+
+.container__price a:hover{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.container__info button{
+    background-color: transparent;
+    border: 0;
+    margin: 15px 0;
+}
+
+.container__info .proceed{
+    background-color: #382be0;
+    padding: 14px 0;
+    border-radius: 1rem;
+    color: white;
+    box-shadow: 0px 5px 5px #d9d4fb;
+}
+
+.container__info .proceed:hover{
+    cursor: pointer;
+    background-color: #776cf0;
+}
+
+.container__info .cancel{
+    color: #7c8399;
+    font-weight: 400;
+    margin: 15px 0 50px 0;
+}
+
+.container__info .cancel:hover{
+    color: black;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 375px){
+    body{
+        background-image: url(/images/pattern-background-mobile.svg);
+    }
+}
